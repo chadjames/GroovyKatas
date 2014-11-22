@@ -2,7 +2,24 @@ package fizzBuzz
 
 class FizzBuzz {
     def fizzBuzz(ArrayList<Integer> integers) {
-        (integers[0] % 3 == 0) ? ["fizz"] : integers
+        def result = []
+        integers.each {
+            switch (it) {
+                case { !(it % 3) && !(it %5) }:
+                    result << 'fizzbuzz'
+                    break
+                case { !(it % 3) }:
+                    result << 'fizz'
+                    break
+                case { !(it % 5) }:
+                    result << 'buzz'
+                    break
+                default:
+                    result << it
+
+            }
         }
+        result
     }
 
+}
