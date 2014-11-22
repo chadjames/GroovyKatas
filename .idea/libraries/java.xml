@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-boot/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-core/src/main/groovy" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-core/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-guice/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-maven/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-specs/src/test/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-spring/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-tapestry/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-tapestry/src/test/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-unitils/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/spock-groovy-2.3/spock-unitils/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
