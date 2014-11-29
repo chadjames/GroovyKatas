@@ -5,6 +5,11 @@ class Calculator {
 
     def add(String numbers){
 
-        0
+        def result = 0
+        numbers.split(',') .each{
+            result += it ? Integer.parseInt(it) : 0
+
+        }
+        result
     }
 }

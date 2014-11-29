@@ -17,4 +17,19 @@ class CalculatorTest extends Specification {
         result == 0
 
     }
+
+    def "should return 1 when given 1"(){
+        when: 'given empty string'
+        result = it.add('1')
+        then: 'return 1'
+        result == 1
+
+    }
+
+    def "should return 2 when given 1,1"(){
+        when: 'given 1,1'
+        result = it.add('1,1')
+        then: 'return 2'
+        result == 2
+    }
 }
