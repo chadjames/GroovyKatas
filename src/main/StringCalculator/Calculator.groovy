@@ -4,24 +4,26 @@ package StringCalculator
 class Calculator {
 
     def delimiter
-    def add(String numbers){
+
+    def add(String numbers) {
 
         delimiter = getDelimiter(numbers)
         def result = 0
-       cleanData(numbers).split(delimiter) .each{
+        cleanData(numbers).split(delimiter).each {
             result += it ? Integer.parseInt(it) : 0
         }
 
         result
     }
-    def getDelimiter(String numbers){
-        if(numbers.startsWith('//')){
+
+    def getDelimiter(String numbers) {
+        if (numbers.startsWith('//')) {
             return numbers[2]
         }
         return ','
     }
-    def cleanData(String numbers){
 
-        numbers.replace('\n', delimiter).replace('/', delimiter)
+    def cleanData(String numbers) {
+        numbers.collectReplacements { it == '\n' || it == '/' ? delimiter : null }
     }
 }
