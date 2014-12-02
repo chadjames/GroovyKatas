@@ -32,4 +32,20 @@ class CalculatorTest extends Specification {
         then: 'return 2'
         result == 2
     }
+
+    def "should handle new lines as delimiter"(){
+        when:'given 1\n1'
+        result = it.add('1\n1')
+        then: 'return 2'
+        result == 2
+    }
+
+    def "should handle custom delimiter"(){
+        when:
+        result = it.add('//,\n1,2')
+        then:
+        result == 3
+    }
+
+
 }
