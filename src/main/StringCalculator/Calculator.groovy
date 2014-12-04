@@ -10,9 +10,11 @@ class Calculator {
         delimiter = getDelimiter(numbers)
         def result = 0
         cleanData(numbers).split(delimiter).each {
+            if(it.contains('-')){
+                throw new NumberFormatException(it)
+            }
             result += it ? Integer.parseInt(it) : 0
         }
-
         result
     }
 
@@ -23,7 +25,7 @@ class Calculator {
         return ','
     }
 
-    def cleanData(String numbers) {
+    def String cleanData(String numbers) {
         numbers.collectReplacements { it == '\n' || it == '/' ? delimiter : null }
     }
 }

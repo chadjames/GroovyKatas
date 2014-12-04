@@ -47,5 +47,13 @@ class CalculatorTest extends Specification {
         result == 3
     }
 
+    def "should throw exception on negative number"(){
+        when:
+        result = it.add('-1,2')
+        then:
+        thrown(NumberFormatException)
+
+    }
+
 
 }
